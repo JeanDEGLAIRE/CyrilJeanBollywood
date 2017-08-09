@@ -62,8 +62,4 @@ $RECYCLE.BIN/
 *.msp
 
 # Eclipse project files
-.classpath
-.project
-.settings
-.metadata
 /target/
