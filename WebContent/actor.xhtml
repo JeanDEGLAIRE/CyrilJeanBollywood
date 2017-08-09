@@ -8,19 +8,18 @@ xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
 <h:head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<title>#{bollywoodController.actor}</title>
+<title>#{bollywoodController.name}</title>
 </h:head>
 <h:body>
 <f:view locale="#{languageController.locale}"/>
 	<div align="center">
-	<h:outputText value="#{bollywoodController.actor}"/>
+	<h:outputText value="#{bollywoodController.name}"/>
 	
 	<h:form>
 	<h:commandButton value="Back" action="index"/>
 	</h:form>
-	<c:if test='(#{bollywoodController.actor} == "aamir")'>
-	<h:graphicImage value="/resources/img/aamir.jpg"  />
-	</c:if>
+
+	<h:graphicImage value="#{bollywoodController.img}"  />
 	
 	</div>
 </h:body>

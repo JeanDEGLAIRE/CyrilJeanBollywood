@@ -1,4 +1,4 @@
-package fr.jean.bollywood.bean;
+package fr.cyriljean.bollywood.bean;
 
 import java.util.Locale;
 
@@ -9,6 +9,9 @@ import javax.faces.context.FacesContext;
 @ManagedBean
 @SessionScoped
 public class LanguageController {
+	public LanguageController() {
+	}
+
 	private Locale locale = FacesContext.getCurrentInstance().getViewRoot().getLocale();
 
 	public String changeLanguage(String lang) {
