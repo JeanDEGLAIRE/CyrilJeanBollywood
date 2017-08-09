@@ -17,12 +17,12 @@
 			<br />
 			<br />
 			<h:selectOneMenu value="#{bollywoodController.actor}">
-				<f:selectItem itemValue="none" itemLabel="Choisissez votre Acteur"/>
+				<f:selectItem itemValue="none" itemLabel="#{messages['action.selectActor']}"/>
 				<f:selectItem itemValue="aamir" itemLabel="Aamir Khan" />
 				<f:selectItem itemValue="karishma" itemLabel="Karishma Kapoor" />
 			</h:selectOneMenu>
 
-			<h:commandButton value= "#{messages[bouton.send]}" action="actor" />
+			<h:commandButton value= "#{messages['button.send']}" action="actor" />
 		</h:form>
 		<br />
 			<h:commandButton value="French"
